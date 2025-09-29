@@ -21,7 +21,7 @@
 			--accent: rgb(66, 4, 1);
 			--bg: rgb(66, 4, 1,.8);
 			--gradientBottom: rgb(163, 0, 0);
-			--gradientTop: rgb(89, 39, 39);
+			--gradientTop: rgb(70, 20, 20);
 			a:link { color: lightblue; }
 		}
 		header {
@@ -52,7 +52,7 @@ body {
 	max-width: 55rem;
 	margin: 5vw auto 12px auto;
 	border: 6px ridge var(--border);
-	outline: 3px solid var(--gradientTop);
+	outline: 3px solid var(--border);
 	outline-offset: 4px;
 	border-radius: 10px;
 	display: flex;
@@ -87,11 +87,11 @@ header span {
 	right: 10px;
 	margin: 10px;
 	font-weight: bold;
-	text-shadow: 1px 1px var(--text),
-		-1px 1px var(--text),
+	text-shadow: 1px 1px var(--border),
+		-1px 1px var(--border),
 		1px -1px var(--accent),
 		-1px -1px var(--accent);
-	color: var(--gradientTop);
+	color: var(--text);
 }
 
 
@@ -186,6 +186,7 @@ a:visited {
 	color: var(--accent);
 
 }
+
 
 
 
