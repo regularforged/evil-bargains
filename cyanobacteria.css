@@ -20,7 +20,7 @@
 			--border: #5a7678;
 			--accent: #74C365;
 			--bg: rgb(0,60,60,.8);
-			--gradientBottom: rgb(0, 50, 60);
+			--gradientBottom: rgb(163, 0, 0);
 			--gradientTop: darkslategrey;
 			a:link { color: lightblue; }
 		}
@@ -186,3 +186,4 @@ a:visited {
 	color: var(--accent);
 
 }
+
