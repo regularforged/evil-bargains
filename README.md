@@ -1,2 +1,0 @@
-# evil-bargains
-webseite :)
