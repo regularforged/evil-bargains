@@ -17,8 +17,8 @@
 	@media (prefers-color-scheme: dark) {
 		:root {
 			--text: white;
-			--border: #5a7678;
-			--accent: #74C365;
+			--border: rgb(66, 4, 1);
+			--accent: rgb(66, 4, 1);
 			--bg: rgb(66, 4, 1,.8);
 			--gradientBottom: rgb(163, 0, 0);
 			--gradientTop: rgb(89, 39, 39);
@@ -186,6 +186,7 @@ a:visited {
 	color: var(--accent);
 
 }
+
 
 
 
