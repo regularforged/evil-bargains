@@ -17,11 +17,12 @@
 	@media (prefers-color-scheme: dark) {
 		:root {
 			--text: white;
-			--border: rgb(66, 4, 1);
-			--accent: rgb(66, 4, 1);
-			--bg: rgb(66, 4, 1,.8);
-			--gradientBottom: rgb(163, 0, 0);
-			--gradientTop: rgb(70, 20, 20);
+			--border: rgb(0, 0, 0);
+			--accent: rgb(12, 138, 113);
+			--bg: rgba(0, 72, 173, 0.8);
+			--gradientBottom: rgb(5, 13, 100);
+			--gradientTop: rgb(43, 218, 249);
+            --textboxColor: rgb(0, 2, 44);
 			a:link { color: lightblue; }
 		}
 		header {
@@ -46,6 +47,40 @@ body {
 	background-size: 20px 35px;
 	background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px; */
 }
+
+  /* Fixed ad bar at bottom */
+    .ad-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center; /* center ads horizontally */
+      align-items: center;
+      gap: 20px;               /* space between ads */
+      padding: 10px 20px;
+      background: #f5f5f5;
+      border-top: 3px solid #333;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+      z-index: 1000; /* keeps it on top */
+    }
+
+    .ad-box {
+      flex: 0 1 auto; /* don’t stretch too much */
+      max-width: 250px;
+      background: #fff;
+      border: 2px solid #ccc;
+      padding: 5px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .ad-box img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
 
 
 .container {
@@ -98,8 +133,8 @@ header span {
 nav {
 	border: 2px ridge var(--border);
 	border-radius: 5px;
-	padding: 5px;
-	background: linear-gradient(var(--gradientTop),var(--gradientBottom));
+	padding: 1px;
+	background: var(--textboxColor);
 }
 nav div {
 	text-align: center;
@@ -109,8 +144,8 @@ nav div {
 nav a {
 	display: block;
 	margin: 5px;
-	background: linear-gradient(to right,var(--bg),var(--gradientBottom));
-	border-radius: 5px;
+	background: var(--textboxColor);
+	border-radius: 10px;
 	padding: 2px 7px;
 	text-decoration: none;
 }
@@ -133,7 +168,7 @@ div.small > img {
 section {
 	border: 2px ridge var(--border);
 	border-radius: 5px;
-	background: linear-gradient(var(--gradientTop),var(--gradientBottom));
+	background: var(--textboxColor);
 	padding: 5px;
 }
 
@@ -186,7 +221,6 @@ a:visited {
 	color: var(--accent);
 
 }
-
 
 
 
